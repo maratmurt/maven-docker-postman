@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "ff7171be-2568-4973-bca7-240beed47ac7",
+		"name": "maven-docker-postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30557378"
+	},
+	"item": [
+		{
+			"name": "Java",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/positions.json?description=Java&location={{city}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"positions.json"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "Java"
+						},
+						{
+							"key": "location",
+							"value": "{{city}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Python",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/positions.json?description=Python&location={{city}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"positions.json"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "Python"
+						},
+						{
+							"key": "location",
+							"value": "{{city}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ruby",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/positions.json?description=Ruby&location={{city}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"positions.json"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "Ruby"
+						},
+						{
+							"key": "location",
+							"value": "{{city}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://raw.githubusercontent.com/skillbox-java/JavaEE/main"
+		}
+	]
+}
